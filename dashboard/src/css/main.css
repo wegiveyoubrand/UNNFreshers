@@ -23,6 +23,7 @@ body {
   padding: 5px;
   background-color: rgba(0, 0, 255, 0.25);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .avatar__image {
@@ -69,10 +70,17 @@ body {
   top: 4rem;
   right: 0;
   font-size: 14px;
-  background: rgba(0, 0, 255, 0.25);
+  background: #fff;
+  border: 1px solid #06063f;
   padding: 1rem;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
+  border-radius: 20px;
+}
+
+.user_options.open {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 .user_options div {
@@ -80,7 +88,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   white-space: nowrap;
-  margin-bottom: 5px;
+}
+
+.user_options div:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .user_options i {
