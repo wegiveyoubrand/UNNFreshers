@@ -3,7 +3,7 @@ const username_cc = document.querySelector('#username')
 
 
 
-const userName = "John";
+const userName = "Kosisochukwu";
 
 const usernameContainer = document.querySelector("#userName_container");
 usernameContainer.textContent = userName
