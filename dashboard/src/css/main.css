@@ -270,9 +270,9 @@ header {
 }
 
 main {
-  padding: 20px;
+  padding: 2rem;
   overflow-y: auto;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 footer {
