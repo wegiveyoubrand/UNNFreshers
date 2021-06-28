@@ -88,6 +88,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .user_options div:not(:last-child) {
@@ -236,6 +237,43 @@ body {
   margin-right: 10px;
 }
 
+.navigation-pane {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.navigation-pane nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.navigation-pane nav > div {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: rgba(10, 10, 135, 0.056);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.navigation-pane nav > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.navigation-pane nav > div.active {
+  background-color: rgba(14, 14, 63, 0.9);
+  color: #fff;
+  border-radius: 25px;
+}
+
+.navigation-pane nav > div:hover {
+  border-radius: 25px;
+  background-color: rgba(14, 14, 63, 0.1);
+}
+
 header {
   position: relative;
   display: -webkit-box;
@@ -262,6 +300,7 @@ header {
   height: 100%;
   background-color: #fff;
   font-size: 14px;
+  overflow: hidden;
 }
 
 .wrapper > .container {
