@@ -452,7 +452,7 @@ aside.open {
 aside .aside {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 280px;
   z-index: 1000;
   height: 100%;
   background: white;
@@ -479,7 +479,7 @@ aside .aside .close-aside {
 }
 
 aside .aside .close-aside i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: darkblue;
 }
 
@@ -499,7 +499,7 @@ aside .aside ul {
 }
 
 aside .aside ul li {
-  height: 60px;
+  height: 45px;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -545,7 +545,7 @@ aside .aside ul li a {
   transition: 0.3s ease-in-out;
   height: 100%;
   color: #000;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.6;
   font-family: "Poppins";
 }

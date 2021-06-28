@@ -1,2 +1,4 @@
 
 *.scss
+src/css/main.css.map
+dashboard/src/css/main.css.map
