@@ -1,4 +1,3 @@
-
 const openUser = document.querySelector(".avatar");
 
 const userOptions = document.querySelector(".user_options");
@@ -15,4 +14,3 @@ openUser.addEventListener("click", () => {
 userLogout.addEventListener("click", () => {
   location.href = "/index.html";
 });
-
