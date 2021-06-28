@@ -1,0 +1,33 @@
+* {
+  &,
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins";
+
+  background-color: rgba(0, 0, 255, 0.15);
+}
+
+@import "./1.atoms/all";
+
+@import "./2.components/all";
+
+@import "./3.layouts/all";
+
+@import "./4.pages/all";
+
+@import "./5.utilities/all";

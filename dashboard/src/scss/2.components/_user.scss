@@ -1,0 +1,23 @@
+.user {
+  position: relative;
+
+  &_options {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    font-size: 14px;
+    background: rgba(0, 0, 255, 0.25);
+    padding: 1rem;
+    transform: scaleY(0);
+    
+    div {
+      display: flex;
+      white-space: nowrap;
+      margin-bottom: 5px;
+    }
+    i {
+      margin-right: 10px;
+      font-size: 1rem;
+    }
+  }
+}
