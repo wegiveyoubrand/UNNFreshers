@@ -269,7 +269,7 @@ body {
   border-radius: 25px;
 }
 
-.navigation-pane nav > div:hover {
+.navigation-pane nav > div:not(.active):hover {
   border-radius: 25px;
   background-color: rgba(14, 14, 63, 0.1);
 }
