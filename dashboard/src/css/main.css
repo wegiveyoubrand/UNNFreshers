@@ -192,12 +192,19 @@ body {
 .remaining_service {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   margin-top: 2rem;
   width: 100%;
   max-width: 100%;
+}
+
+@media (min-width: 600px) {
+  .remaining_service {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .remaining_service > div {
@@ -259,6 +266,7 @@ body {
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .navigation-pane nav > div:not(:last-child) {
