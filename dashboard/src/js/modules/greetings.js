@@ -1,5 +1,4 @@
 let welcome,
-  newUser = "Paul",
   date = new Date(),
   hour = date.getHours(),
   minute = date.getMinutes(),
@@ -20,5 +19,7 @@ if (hour < 12) {
 }
 
 const welcomeContainer = document.querySelector("#greeting");
-// newUser = document.querySelector("#username").value;
+
+// USER
+let newUser = localStorage.getItem("username");
 welcomeContainer.textContent = `${welcome}, ${newUser}`;
