@@ -395,22 +395,21 @@ button {
 }
 
 .navigation-pane nav::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 .navigation-pane nav::-webkit-scrollbar-thumb {
-  background-color: #444;
-  border-radius: 6px;
-  border: 3px solid #888;
+  background-color: #17166d;
+  border-radius: 2px;
+  border: 3px solid #080630;
 }
 
 .navigation-pane nav > div {
-  width: 120px;
-  margin-right: 20px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 200px;
-          flex: 0 0 200px;
   white-space: nowrap;
+}
+
+.navigation-pane nav > div:not(:last-child) {
+  margin-right: 20px;
 }
 
 .navigation-pane nav > div a {
