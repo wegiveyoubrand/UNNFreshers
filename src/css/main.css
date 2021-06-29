@@ -115,22 +115,13 @@ header {
   z-index: 900;
 }
 
-header .avatar {
-  background-color: white;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 139, 0.501);
-          box-shadow: 0 0 5px rgba(0, 0, 139, 0.501);
-}
-
 header .brand {
   font-family: "Montserrat";
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   cursor: pointer;
   font-weight: 700;
   color: darkblue;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   text-transform: capitalize;
@@ -138,6 +129,17 @@ header .brand {
 
 header .brand:hover {
   opacity: 0.7;
+}
+
+header .brand .logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+header .brand .logo img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 header .menuToggle {
