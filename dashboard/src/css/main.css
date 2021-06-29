@@ -437,7 +437,7 @@ header {
 }
 
 main {
-  padding: 2rem;
+  padding: 2rem 10px;
   overflow-y: auto;
   margin-bottom: 20px;
 }
