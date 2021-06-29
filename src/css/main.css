@@ -390,22 +390,14 @@ button {
   display: flex;
   width: 100%;
   overflow-x: auto;
-  scrollbar-color: #444;
-  padding: 20px;
-}
-
-.navigation-pane nav::-webkit-scrollbar {
-  width: 5px;
-}
-
-.navigation-pane nav::-webkit-scrollbar-thumb {
-  background-color: #17166d;
-  border-radius: 2px;
-  border: 3px solid #080630;
+  padding: 20px 0;
 }
 
 .navigation-pane nav > div {
   white-space: nowrap;
+  padding: 10px 20px;
+  background: #18145a;
+  border-radius: 20px;
 }
 
 .navigation-pane nav > div:not(:last-child) {
@@ -419,7 +411,7 @@ button {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-family: "Poppins";
-  color: rgba(255, 255, 255, 0.75);
+  color: #eeecf3;
 }
 
 .navigation-pane nav > div a.active, .navigation-pane nav > div a:hover {
@@ -580,9 +572,8 @@ aside #closeAside {
   padding: 2rem;
   background-color: #fff;
   margin-bottom: 20px;
-  border-radius: 25px;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 139, 0.234);
-          box-shadow: 0 0 15px rgba(0, 0, 139, 0.234);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 139, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 139, 0.1);
   grid-gap: 20px;
   display: -ms-grid;
   display: grid;
