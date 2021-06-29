@@ -1,5 +1,5 @@
 let welcome,
-  user = "Paul",
+  newUser = "Paul",
   date = new Date(),
   hour = date.getHours(),
   minute = date.getMinutes(),
@@ -20,4 +20,5 @@ if (hour < 12) {
 }
 
 const welcomeContainer = document.querySelector("#greeting");
-welcomeContainer.textContent = `${welcome}, ${user}`;
+// newUser = document.querySelector("#username").value;
+welcomeContainer.textContent = `${welcome}, ${newUser}`;

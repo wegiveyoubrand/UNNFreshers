@@ -93,6 +93,24 @@ body {
   cursor: pointer;
 }
 
+.options {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: transparent;
+}
+
+.options select,
+.options option {
+  width: 100%;
+  font-size: inherit;
+  padding: 10px 1rem;
+  outline: none;
+  border: 1px solid rgba(12, 12, 97, 0.5);
+  border-radius: 15px;
+  background-color: transparent;
+}
+
 .user {
   position: relative;
 }
@@ -391,6 +409,38 @@ body {
   border-radius: 50px;
 }
 
+.available-service {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px;
+  margin-top: 15px;
+}
+
+.available-service > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid rgba(18, 18, 60, 0.09);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.available-service > div:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
 header {
   position: relative;
   display: -webkit-box;
@@ -440,6 +490,12 @@ main {
   padding: 2rem 10px;
   overflow-y: auto;
   margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  main {
+    padding: 2rem;
+  }
 }
 
 footer {
@@ -512,5 +568,9 @@ footer .footer-component > div i {
 
 .sliding-container > * {
   width: 100%;
+}
+
+#studentPortal {
+  background-color: rgba(234, 233, 250, 0.5);
 }
 /*# sourceMappingURL=main.css.map */

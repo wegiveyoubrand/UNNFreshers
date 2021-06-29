@@ -30,7 +30,7 @@
     />
   </head>
 
-  <body>
+  <body id="studentPortal">
     <div class="wrapper">
       <!-- SIDE COMPONENTS -->
       <div class="side-nave">
@@ -41,7 +41,9 @@
             >
           </li>
           <li>
-            <a href="../Blog.html"><i class="material-icons">tag</i> What's Trending</a>
+            <a href="../Blog.html"
+              ><i class="material-icons">tag</i> What's Trending</a
+            >
           </li>
 
           <li>
@@ -65,7 +67,7 @@
           </div>
 
           <div class="welcome-text">
-            <p>Good morning, <span id="userName_container"></span></p>
+            <p id="greeting"></p>
           </div>
 
           <div class="user">
@@ -101,13 +103,33 @@
             </div>
           </div>
 
-          <div class="remaining_service">
-            <div class class="">Screening Result</div>
-            <div class="photocopy">JAMB Services</div>
-            <div class="internet_time">Remita Payment</div>
-            <div class="power_charge_time">Acceptance of Admission</div>
-            <div class="passport">Student Profile</div>
-            <div class="passport">Clearance Process</div>
+          <div class="options">
+            <select name="" id="">
+              <option value="fresher" selected>For Fresher</option>
+              <option value="fresher">For Undergraduates</option>
+              <option value="fresher">For Final Year</option>
+              <option value="fresher">For Postgrauduate</option>
+            </select>
+          </div>
+          <div class="available-service">
+            <div class class="">
+              Screening Result <i class="material-icons">arrow_right</i>
+            </div>
+            <div class="photocopy">
+              JAMB Services <i class="material-icons">arrow_right</i>
+            </div>
+            <div class="internet_time">
+              Remita Payment <i class="material-icons">arrow_right</i>
+            </div>
+            <div class="power_charge_time">
+              Acceptance of Admission <i class="material-icons">arrow_right</i>
+            </div>
+            <div class="passport">
+              Student Profile <i class="material-icons">arrow_right</i>
+            </div>
+            <div class="passport">
+              Clearance Process <i class="material-icons">arrow_right</i>
+            </div>
           </div>
         </main>
 

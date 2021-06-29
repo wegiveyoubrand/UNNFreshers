@@ -88,7 +88,7 @@
 
     <main class="container">
       <div class="form-container">
-        <form autocomplete="off" >
+        <form autocomplete="off" method="POST" action="submitForm" >
           <div class="form-group">
             <label for="">Login ID</label>
             <input type="text" id="username"/>
@@ -98,7 +98,7 @@
             <input type="password" id="password"/>
           </div>
           <div class="form-group" >
-            <button type="button" id="submitForm" onclick="location.href='/dashboard/index.html'" >Login</button>
+            <button type="submit" id="submitForm" onclick="location.href='/dashboard/index.html'" >Login</button>
           </div>
         </form>
       </div>
