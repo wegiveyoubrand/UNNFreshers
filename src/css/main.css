@@ -171,6 +171,7 @@ main {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,36 +179,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.wrapper h2 {
-  font-size: 3rem;
-  line-height: 1.2;
-  letter-spacing: 0.5px;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  word-wrap: break-word;
-}
-
-@media (max-width: 720px) {
-  .wrapper h2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 2.25rem;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 520px) {
-  .wrapper h2 {
-    font-size: 1.75rem;
-  }
 }
 
 a {
