@@ -36,28 +36,35 @@
       <div class="side-nave">
         <ul>
           <li>
-            <a href="../features/tradeMarket.html"
+            <a href="./tradeMarket.html"
               ><i class="material-icons">trending_up</i> Trade Market</a
             >
           </li>
+
           <li>
             <a href="../Blog.html"
               ><i class="material-icons">tag</i> What's Trending</a
             >
           </li>
 
-          <li>
-            <a href="../features/filemanager.html"
+          <li class="file-manager active">
+            <a href="./filemanager.html"
               ><i class="material-icons">cases</i> My File Manager</a
             >
           </li>
+
           <li>
-            <a href="../features/portfolio.html"
+            <a href="./portfolio.html"
               ><i class="material-icons">label_important</i> Portfolio
               Records</a
             >
           </li>
         </ul>
+      </div>
+
+      <!-- CUSTOM LOADER -->
+      <div class="custom-loader">
+        <div class="loader"></div>
       </div>
 
       <div class="container">
@@ -89,48 +96,16 @@
         </header>
 
         <!-- MAIN COMPONENTS -->
-        <main id="studentPortal">
-          <div class="navigation-pane">
-            <nav>
-              <div class="" onclick="location.href='../index.html'">
-                Subscribed services
-              </div>
-              <div class="active">Student Portal</div>
-            </nav>
+        <main id="fileManager" class="file-manager">
+          <div class="">
+            <h1>File Manager</h1>
           </div>
-          <div class="subscription">
-            <div class="">
-              <p>Basic</p>
-              <button type="button">Upgrade</button>
+          <div class="file-manager__container">
+            <div class="file-manager__component folder">
+              <i class="material-icons">folder</i>My Folders
             </div>
-          </div>
-
-          <div class="options">
-            <select name="" id="">
-              <option value="fresher" selected>For Fresher</option>
-              <option value="fresher">For Undergraduates</option>
-              <option value="fresher">For Final Year</option>
-              <option value="fresher">For Postgrauduate</option>
-            </select>
-          </div>
-          <div class="available-service">
-            <div class class="">
-              Screening Result <i class="material-icons">arrow_right</i>
-            </div>
-            <div class="photocopy">
-              JAMB Services <i class="material-icons">arrow_right</i>
-            </div>
-            <div class="internet_time">
-              Remita Payment <i class="material-icons">arrow_right</i>
-            </div>
-            <div class="power_charge_time">
-              Acceptance of Admission <i class="material-icons">arrow_right</i>
-            </div>
-            <div class="passport">
-              Student Profile <i class="material-icons">arrow_right</i>
-            </div>
-            <div class="passport">
-              Clearance Process <i class="material-icons">arrow_right</i>
+            <div class="file-manager__component file">
+              <i class="material-icons">description</i>My Files
             </div>
           </div>
         </main>

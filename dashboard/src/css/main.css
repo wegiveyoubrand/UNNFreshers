@@ -243,6 +243,14 @@ img {
           align-items: center;
 }
 
+.side-nave ul li {
+  height: 2rem;
+}
+
+.side-nave ul li a {
+  height: 100%;
+}
+
 .side-nave ul li > ul {
   padding-left: 2rem;
 }
@@ -492,6 +500,11 @@ img {
           transform: scale(1.025);
 }
 
+.hero-image {
+  height: 60vh;
+  width: 100%;
+}
+
 header {
   position: relative;
   display: -webkit-box;
@@ -623,5 +636,35 @@ footer .footer-component > div i {
 
 #studentPortal {
   background-color: rgba(234, 233, 250, 0.5);
+}
+
+.file-manager__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 20px;
+  padding: 15px;
+  margin-top: 2rem;
+}
+
+.file-manager__component {
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(15, 10, 87, 0.118);
+          box-shadow: 0 0 5px rgba(15, 10, 87, 0.118);
+  padding: 15px 2rem;
+  border-radius: 20px;
+  line-height: 1.2;
+}
+
+.file-manager__component i {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
