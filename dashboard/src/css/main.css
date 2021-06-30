@@ -287,7 +287,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 20px;
+  border-radius: 25px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -303,14 +303,14 @@ img {
 }
 
 .subscription button:hover {
-  background-color: #a2a2f3;
-  color: #000;
+  background-color: #060629;
+  color: white;
 }
 
 .subscription > div {
   padding: 15px 20px;
-  background-color: #0c0c59;
-  color: #fff;
+  background-color: #ededed;
+  color: #080610;
   border-radius: 50px;
 }
 
@@ -486,7 +486,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 20px;
+  border-radius: 25px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -502,14 +502,14 @@ img {
 }
 
 .subscription button:hover {
-  background-color: #a2a2f3;
-  color: #000;
+  background-color: #060629;
+  color: white;
 }
 
 .subscription > div {
   padding: 15px 20px;
-  background-color: #0c0c59;
-  color: #fff;
+  background-color: #ededed;
+  color: #080610;
   border-radius: 50px;
 }
 
