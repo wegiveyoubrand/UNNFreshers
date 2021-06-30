@@ -627,7 +627,7 @@ footer {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  background-color: #fff;
+  background-color: #0b0b33;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, 0.015);
           box-shadow: 0 0 5px rgba(0, 0, 255, 0.015);
 }
@@ -662,7 +662,7 @@ footer .footer-component > div {
           justify-content: center;
   text-align: center;
   font-size: 10px;
-  color: #090952;
+  color: #ededf8;
   opacity: 0.85;
   font-weight: 700;
   cursor: pointer;
