@@ -30,7 +30,7 @@
     />
   </head>
 
-  <body>
+  <body id="myProfile">
     <div class="wrapper">
       <!-- SIDE COMPONENTS -->
       <div class="side-nave">
@@ -72,7 +72,7 @@
             <p id="greeting"></p>
           </div>
 
-          <div class="user" onclick="location.href='./myProfile.html'">
+          <div class="user">
             <div class="avatar">
               <div class="avatar__image">
                 <i class="material-icons">person</i>
@@ -90,29 +90,27 @@
 
         <!-- MAIN COMPONENTS -->
         <main>
-          <!-- <div class="navigation-pane">
-            <nav>
-              <div class="active">Subscribed services</div>
-              <div class="" onclick="location.href='./tabs/studentPortal.html'">
-                Student Portal
+          <div class="user-profile">
+            <div class="user">
+              <div class="">
+                <div class="user__avatar">
+                  <img src="./public/images/Layer 1.png" alt="" />
+                </div>
+                <div class="user__name">Ishaili Paul C.</div>
               </div>
-              <div class="" onclick="location.href='./tabs/timetable.html'">
-               Time-table
+              <div class="">
+                <div class="user__category">
+                  Category: <span>Fresher</span>
+                </div>
+                <div class="user__Institution">
+                  Institution: <span>UNN</span>
+                </div>
               </div>
-            </nav>
-          </div> -->
-          <div class="subscription">
-            <div class="">
-              <p>Basic</p>
-              <button type="button">
-                Upgrade <i class="material-icons">thumb_up_off_alt</i>
-              </button>
             </div>
           </div>
 
-          <div class="available-service">
-            <div class="cu">Subscribed Services</div>
-            <div class="cu" onclick="location.href='./tabs/studentPortal.html'">Student Portal</div>
+          <div class="user__action">
+            <div class="">Edit Profile</div>
           </div>
         </main>
 

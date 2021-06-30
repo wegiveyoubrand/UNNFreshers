@@ -597,6 +597,59 @@ img {
           align-items: center;
 }
 
+.user-profile {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem;
+}
+
+.user-profile .user {
+  width: 400px;
+  padding: 2rem;
+  background-color: #9488ff;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.user-profile .user__avatar {
+  position: relative;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-profile .user__avatar img {
+  width: auto;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 header {
   position: relative;
   display: -webkit-box;
