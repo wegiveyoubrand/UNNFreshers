@@ -122,14 +122,20 @@ header {
 
 header .brand {
   font-family: "Montserrat";
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   cursor: pointer;
   font-weight: 700;
   color: darkblue;
-  font-size: 1.1rem;
+  font-size: 1rem;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+
+header .brand span {
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 40px;
 }
 
 header .brand:hover {
@@ -137,14 +143,30 @@ header .brand:hover {
 }
 
 header .brand .logo {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 header .brand .logo img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+header .nav a:not(:last-child) {
+  margin-right: 20px;
+}
+
+header .nav .button {
+  background-color: #0d0646;
+  color: #fff;
 }
 
 header .menuToggle {
@@ -490,7 +512,7 @@ aside .aside ul li a {
 }
 
 aside .aside ul li a i {
-  margin-right: 12px;
+  margin-right: 20px;
   font-size: 1rem;
 }
 
