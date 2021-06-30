@@ -564,16 +564,17 @@ img {
 }
 
 .available-service > div.cu {
-  border-radius: 25px;
-  font-weight: bold;
-  height: 200px;
+  border-radius: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  height: 180px;
   width: 200px;
   font-size: 1.25rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background: #07072a;
+  background: #08083d;
   color: #fff;
   margin: 0 auto;
 }
