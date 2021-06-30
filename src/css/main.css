@@ -483,27 +483,27 @@ aside .aside ul li.get-started {
   -ms-grid-column-align: end;
       justify-self: end;
   background: white;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 139, 0.104);
-          box-shadow: 0 0 15px rgba(0, 0, 139, 0.104);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 139, 0.104);
+          box-shadow: 0 0 10px rgba(0, 0, 139, 0.104);
   border-radius: 35px;
   font-weight: 700;
   margin-top: 1rem;
-  color: #000;
   padding: 8px 0px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 aside .aside ul li.get-started:hover {
-  background-color: #0c0c3a;
-  color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 139, 0.508);
+          box-shadow: 0 0 5px rgba(0, 0, 139, 0.508);
+  color: #000;
 }
 
 aside .aside ul li.get-started a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 10px 20px 30px;
+  padding: 15px 10px 15px 30px;
 }
 
 aside .aside ul li.active, aside .aside ul li:hover {
@@ -519,7 +519,6 @@ aside .aside ul li a {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   height: 100%;
-  color: #000;
   font-size: 14px;
   line-height: 1.6;
   font-family: "Poppins";

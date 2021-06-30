@@ -6,7 +6,7 @@ form.addEventListener("submit", function (event) {
   let callme = form.elements.username.value;
 
   localStorage.setItem("username", callme);
-  location.href = "./dashboard/index.html";
+  location.href = "../dashboard/index.html";
 
   callme = localStorage.getItem("username");
   console.log(callme);
