@@ -13,7 +13,7 @@
       type="image/x-icon"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="../src/css/main.css" />
 
     <!-- MATERIAL ICONS -->
     <link
@@ -47,10 +47,12 @@
           </li>
 
           <li class="file-manager">
-            <a href="./features/filemanager.html"><i class="material-icons">cases</i> My File Manager</a>
+            <a href="../features/filemanager.html"
+              ><i class="material-icons">cases</i> My File Manager</a
+            >
           </li>
           <li>
-            <a href="./features/portfolio.html"
+            <a href="../features/portfolio.html"
               ><i class="material-icons">label_important</i> Portfolio
               Records</a
             >
@@ -90,51 +92,84 @@
         <main>
           <div class="navigation-pane">
             <nav>
-              <div class="active">Subscribed services</div>
-              <div class="" onclick="location.href='./tabs/studentPortal.html'">
+              <div onclick="location.href='../index.html'">
+                Subscribed services
+              </div>
+              <div class="" onclick="location.href='../tabs/studentPortal.html'">
                 Student Portal
               </div>
-              <div class="" onclick="location.href='./tabs/timetable.html'">
-               Time-table
+              <div class="active" onclick="location.href='./timetable.html'">
+                Time-table
               </div>
             </nav>
           </div>
           <div class="subscription">
             <div class="">
               <p>Basic</p>
-              <button type="button">Upgrade <i class="material-icons">thumb_up_off_alt</i></button>
+              <button type="button">
+                Upgrade <i class="material-icons">thumb_up_off_alt</i>
+              </button>
             </div>
           </div>
+          <div class="options">
+            <select name="" id="">
+              <option value="fresher" selected>Lecture</option>
+              <option value="fresher">Examinations</option>
+            </select>
+          </div>
 
-          <div class="remaining_service">
-            <div class="printing">
-              <div>
-                <span>1022</span>
+          <div class="time-table">
+            <div class="table">
+              <div class="row">
+                <div class="table_date">15 - 06 - 2021</div>
+                <div class="table_subject">GSP 101</div>
+
+                <div class="table_venue">Jimbass</div>
+                <div class="table_time">9am</div>
               </div>
-              Printing
-            </div>
-            <div class="photocopy">
-              <div>
-                <span>99</span>
+              <div class="row">
+                <div class="table_date">15 - 06 - 2021</div>
+                <div class="table_subject">GSP 101</div>
+
+                <div class="table_venue">Jimbass</div>
+                <div class="table_time">9am</div>
               </div>
-              Photocopy
-            </div>
-            <div class="internet_time">
-              <div>
-                <span>122</span>
-                <p>gb</p>
+              <div class="row">
+                <div class="table_date">15 - 06 - 2021</div>
+                <div class="table_subject">GSP 101</div>
+
+                <div class="table_venue">Jimbass</div>
+                <div class="table_time">9am</div>
               </div>
-              Internet Data
-            </div>
-            <div class="power_charge_time">
-              <div>
-                <span>99</span>
-                <p>mins</p>
+              <div class="row">
+                <div class="table_date">15 - 06 - 2021</div>
+                <div class="table_subject">GSP 101</div>
+
+                <div class="table_venue">Jimbass</div>
+                <div class="table_time">9am</div>
               </div>
-              Power Time
+              <div class="row">
+                <div class="table_date">15 - 06 - 2021</div>
+                <div class="table_subject">GSP 101</div>
+
+                <div class="table_venue">Jimbass</div>
+                <div class="table_time">9am</div>
+              </div>
+              <div class="row">
+                <div class="table_date">15 - 06 - 2021</div>
+                <div class="table_subject">GSP 101</div>
+
+                <div class="table_venue">Jimbass</div>
+                <div class="table_time">9am</div>
+              </div>
+              <div class="row">
+                <div class="table_date">15 - 06 - 2021</div>
+                <div class="table_subject">GSP 101</div>
+
+                <div class="table_venue">Jimbass</div>
+                <div class="table_time">9am</div>
+              </div>
             </div>
-            <div class="passport"><span>22</span> Passport</div>
-            <div class="passport"><span>9</span> Delivery service</div>
           </div>
         </main>
 
@@ -154,13 +189,15 @@
       <!-- MODAL COMPONENT -->
       <div class="modal">
         <!-- Compoent -->
+       <div class="modal-content">
         <div class="search-bar">
           <input type="text" placeholder="what are you looking for?" />
           <button type="button">Search</button>
         </div>
+       </div>
       </div>
     </div>
 
-    <script src="./src/js/main.js" type="module"></script>
+    <script src="../src/js/main.js" type="module"></script>
   </body>
 </html>
