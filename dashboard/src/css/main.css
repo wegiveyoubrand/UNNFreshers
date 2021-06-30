@@ -659,9 +659,15 @@ footer .footer-component > div i {
   background-color: #fff;
   -webkit-box-shadow: 0 0 5px rgba(15, 10, 87, 0.118);
           box-shadow: 0 0 5px rgba(15, 10, 87, 0.118);
-  padding: 15px 2rem;
+  padding: 15px;
   border-radius: 20px;
   line-height: 1.2;
+}
+
+@media (min-width: 600px) {
+  .file-manager__component {
+    padding: 15px 2rem;
+  }
 }
 
 .file-manager__component i {
