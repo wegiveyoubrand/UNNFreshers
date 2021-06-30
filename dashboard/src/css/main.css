@@ -661,13 +661,13 @@ footer .footer-component > div {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   color: #090952;
   opacity: 0.85;
   font-weight: 700;
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   -webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
   /* ease-in-out */
