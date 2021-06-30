@@ -349,7 +349,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(234, 233, 250, 0.5);
+  background-color: rgba(5, 3, 33, 0.96);
+  -webkit-box-shadow: 0 0 15px rgba(77, 74, 126, 0.5);
+          box-shadow: 0 0 15px rgba(77, 74, 126, 0.5);
+  color: #fff;
+  border-radius: 25px;
   line-height: 1.2;
 }
 
@@ -518,9 +522,17 @@ img {
 .available-service {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 15px;
+  min-height: 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 15px;
 }
 
@@ -528,14 +540,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
   background: #fff;
+  -webkit-box-shadow: 0px 0px 5px rgba(18, 18, 60, 0.09);
+          box-shadow: 0px 0px 5px rgba(18, 18, 60, 0.09);
   border-bottom: 1px solid rgba(18, 18, 60, 0.09);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -545,6 +561,21 @@ img {
 .available-service > div:hover {
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
+}
+
+.available-service > div.cu {
+  border-radius: 25px;
+  font-weight: bold;
+  height: 200px;
+  width: 200px;
+  font-size: 1.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #07072a;
+  color: #fff;
+  margin: 0 auto;
 }
 
 .hero-image {
@@ -627,9 +658,9 @@ footer {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  background-color: #0b0b33;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, 0.015);
-          box-shadow: 0 0 5px rgba(0, 0, 255, 0.015);
+  background-color: #111155;
+  -webkit-box-shadow: 0 0 5px rgba(61, 61, 141, 0.926);
+          box-shadow: 0 0 5px rgba(61, 61, 141, 0.926);
 }
 
 footer .footer-component {
