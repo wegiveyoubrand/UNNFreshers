@@ -387,7 +387,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
+  padding-bottom: 15px;
 }
 
 .navigation-pane nav > div {
