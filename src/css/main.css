@@ -818,4 +818,10 @@ footer {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
+#account header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
 /*# sourceMappingURL=main.css.map */
