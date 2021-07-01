@@ -130,11 +130,15 @@ header .brand {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   text-transform: uppercase;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 header .brand span {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   letter-spacing: 40px;
 }
 
@@ -161,8 +165,8 @@ header .button {
   padding: 15px 20px;
   border-radius: 5px;
   border: 1px solid transparent;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 header .button:hover {
