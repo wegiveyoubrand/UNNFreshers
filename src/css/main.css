@@ -124,14 +124,10 @@ header .brand {
   cursor: pointer;
   font-weight: 700;
   color: darkblue;
-  font-size: 1rem;
+  font-size: 12px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   text-transform: uppercase;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-  -webkit-transform-origin: left;
-          transform-origin: left;
   -ms-flex-negative: 1;
       flex-shrink: 1;
 }
@@ -139,7 +135,7 @@ header .brand {
 header .brand span {
   display: block;
   font-size: 1.2em;
-  letter-spacing: 40px;
+  letter-spacing: 33px;
 }
 
 header .brand:hover {
