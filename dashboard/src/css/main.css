@@ -534,6 +534,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
+  line-height: 1.2;
   padding: 2rem;
   background: #fff;
   -webkit-box-shadow: 0px 0px 5px rgba(18, 18, 60, 0.09);
@@ -928,5 +930,13 @@ footer .footer-component > div i {
   .file-manager__component > i {
     display: inline-block;
   }
+}
+
+#JAMBProfile {
+  background-color: rgba(234, 233, 250, 0.5);
+}
+
+#JAMBProfile main {
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */
