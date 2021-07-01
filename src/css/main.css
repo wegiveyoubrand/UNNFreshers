@@ -134,10 +134,13 @@ header .brand {
 
 header .brand span {
   display: block;
-  font-size: 1.2em;
-  letter-spacing: 33px;
 }
 
+header .brand span:first-child {
+  letter-spacing: 10px;
+}
+
+header .brand > div > span
 header .brand:hover {
   opacity: 0.7;
 }
@@ -161,7 +164,6 @@ header .nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 20px;
 }
 
 header .button {
