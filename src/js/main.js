@@ -6,7 +6,7 @@ const closeAside = document.querySelectorAll("#closeAside");
 
 toHome.forEach((home) => {
   home.addEventListener("click", () => {
-    location.href = "index.html";
+    location.href = "/index.html";
   });
 });
 
