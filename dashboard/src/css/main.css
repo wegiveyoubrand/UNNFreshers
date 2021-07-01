@@ -660,6 +660,10 @@ img {
   margin-bottom: 2.6rem;
   display: -ms-grid;
   display: grid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .section-wrapper .section-title {
@@ -680,6 +684,10 @@ img {
   -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   padding-top: 10px;
 }
 
@@ -735,6 +743,7 @@ img {
   background: #08072e;
   color: #f2f3f2;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .section-wrapper .section-action i {
