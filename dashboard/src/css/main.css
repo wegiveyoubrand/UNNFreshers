@@ -667,6 +667,37 @@ img {
   border-radius: 25px;
 }
 
+.section-wrapper .section-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+  padding-top: 10px;
+}
+
+.section-wrapper .section-card {
+  background-color: #000;
+  border-radius: 25px;
+  padding: 20px;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.section-wrapper .section-card__number {
+  height: 3rem;
+  width: 3rem;
+  position: relative;
+  background-color: #11073b;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
 header {
   position: relative;
   display: -webkit-box;
