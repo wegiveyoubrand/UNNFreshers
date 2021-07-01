@@ -666,7 +666,7 @@ img {
   top: -1rem;
   left: 20px;
   font-size: 12px;
-  background-color: #d6caca;
+  background-color: #cbcad6;
   padding: 8px 15px;
   border-radius: 25px;
 }
@@ -681,20 +681,23 @@ img {
 }
 
 .section-wrapper .section-card {
-  background-color: #06063a;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px rgba(18, 18, 60, 0.09);
+          box-shadow: 0px 0px 5px rgba(18, 18, 60, 0.09);
   border-radius: 5px;
-  padding: 10px;
-  color: #fff;
+  padding: 20px 10px;
+  color: #222;
   display: -ms-grid;
   display: grid;
   place-items: center;
 }
 
 .section-wrapper .section-card__number {
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
   position: relative;
   background-color: #11073b;
+  color: #f3f3f3;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -716,7 +719,8 @@ img {
           align-items: center;
   border-radius: 5px;
   padding: 8px 15px;
-  background: rgba(75, 64, 226, 0.439);
+  background: #08072e;
+  color: #f2f3f2;
   font-size: 12px;
 }
 
