@@ -705,6 +705,14 @@ img {
   margin-bottom: 20px;
 }
 
+.section-wrapper .section-card__text {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: rgba(22, 10, 65, 0.75);
+}
+
 .section-wrapper .section-action {
   margin-top: 2rem;
   display: -webkit-box;
