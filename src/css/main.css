@@ -23,6 +23,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "poppins";
   background-color: #fff;
   height: 100%;
@@ -187,12 +188,24 @@ main {
   bottom: 0;
   min-height: calc(100vh - 6rem);
   height: 100%;
-  padding: 2rem 10px;
 }
 
 section {
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: calc(100vh - 6rem);
+  color: #000;
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+}
+
+section .section-title {
+  padding: 2rem;
+  text-align: center;
 }
 
 .wrapper {
@@ -201,6 +214,7 @@ section {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,6 +222,12 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.card__hori {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 a {
@@ -761,63 +781,6 @@ aside #closeAside {
      object-fit: cover;
   height: 200px;
   width: auto;
-}
-
-section .section-header {
-  position: relative;
-  text-align: center;
-}
-
-section .section-header h3 {
-  margin-bottom: 20px;
-}
-
-section .section-header .semester {
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: #a8ed9c;
-}
-
-section .section-header .session {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 15rem;
-  font-weight: 600;
-  opacity: 0.1;
-  letter-spacing: 15px;
-  z-index: -1;
-}
-
-.table .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 60px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 14px;
-  color: #d6d6d6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 #account header {

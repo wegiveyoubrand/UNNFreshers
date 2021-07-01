@@ -382,42 +382,28 @@ img {
 }
 
 .navigation-pane {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.navigation-pane nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: auto;
-  padding-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px 0;
 }
 
-.navigation-pane nav > div {
-  padding: 10px 20px;
+.navigation-pane > div {
+  padding: 10px 2rem;
   font-size: 14px;
-  background-color: rgba(10, 10, 135, 0.056);
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   white-space: nowrap;
-}
-
-.navigation-pane nav > div:not(:last-child) {
-  margin-right: 20px;
-}
-
-.navigation-pane nav > div.active {
-  background-color: rgba(14, 14, 63, 0.9);
-  color: #fff;
-  border-radius: 25px;
-}
-
-.navigation-pane nav > div:not(.active):hover {
-  border-radius: 25px;
-  background-color: rgba(14, 14, 63, 0.1);
 }
 
 .modal {
@@ -524,8 +510,8 @@ img {
   display: grid;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 15px;
-  min-height: 75%;
+  grid-gap: 10px;
+  padding: 20px 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -542,17 +528,18 @@ img {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 2rem;
   background: #fff;
   -webkit-box-shadow: 0px 0px 5px rgba(18, 18, 60, 0.09);
           box-shadow: 0px 0px 5px rgba(18, 18, 60, 0.09);
   border-bottom: 1px solid rgba(18, 18, 60, 0.09);
+  border-radius: 5px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -561,22 +548,6 @@ img {
 .available-service > div:hover {
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
-}
-
-.available-service > div.cu {
-  border-radius: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  height: 180px;
-  width: 200px;
-  font-size: 1.25rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  background: #08083d;
-  color: #fff;
-  margin: 0 auto;
 }
 
 .hero-image {
@@ -718,6 +689,8 @@ img {
   place-items: center;
   border-radius: 50%;
   margin-bottom: 20px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .section-wrapper .section-card__text {
@@ -728,6 +701,13 @@ img {
   font-weight: 700;
   color: rgba(22, 10, 65, 0.75);
   line-height: 1.2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.section-wrapper .section-card:hover > * {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .section-wrapper .section-action {
@@ -888,6 +868,10 @@ footer .footer-component > div i {
   background-color: rgba(234, 233, 250, 0.5);
 }
 
+#studentPortal main {
+  padding: 0;
+}
+
 .file-manager__container {
   display: -ms-grid;
   display: grid;
@@ -934,5 +918,15 @@ footer .footer-component > div i {
 
 .file-manager__component i {
   margin-right: 20px;
+}
+
+.file-manager__component > i {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .file-manager__component > i {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=main.css.map */
