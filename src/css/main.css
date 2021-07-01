@@ -184,13 +184,14 @@ header .button:hover {
 
 main {
   position: relative;
-  top: 6rem;
-  min-height: calc(100% - 6rem);
+  bottom: 0;
+  min-height: calc(100vh - 6rem);
   height: 100%;
   padding: 2rem 10px;
 }
 
 section {
+  position: relative;
   height: calc(100vh - 6rem);
 }
 
