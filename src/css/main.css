@@ -145,6 +145,7 @@ header .brand:hover {
 header .brand .logo {
   height: 2.5rem;
   width: 2.5rem;
+  margin-right: 15px;
 }
 
 header .brand .logo img {
@@ -153,44 +154,33 @@ header .brand .logo img {
      object-fit: contain;
 }
 
-header .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 14px;
-}
-
-header .nav a:not(:last-child) {
-  margin-right: 20px;
-}
-
-header .nav .button {
+header .button {
   background-color: #0d0646;
   color: #fff;
+  font-size: 1rem;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
-header .menuToggle {
-  cursor: pointer;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
-@media (min-width: 720px) {
-  header .menuToggle {
-    padding-right: 2rem;
-  }
-}
-
-header .menuToggle i {
-  font-size: 2rem;
+header .button:hover {
+  border-color: #0d0646;
+  background-color: #fff;
+  color: #0d0646;
 }
 
 main {
   position: relative;
   top: 6rem;
-  height: calc(100% - 6rem);
+  min-height: calc(100% - 6rem);
+  height: 100%;
   padding: 2rem 10px;
+}
+
+section {
+  height: calc(100vh - 6rem);
 }
 
 .wrapper {
