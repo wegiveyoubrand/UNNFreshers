@@ -650,6 +650,23 @@ img {
      object-fit: cover;
 }
 
+.section-wrapper {
+  padding: 20px;
+  padding-top: 30px;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 255, 0.323);
+  margin-bottom: 2rem;
+}
+
+.section-wrapper .section-title {
+  position: absolute;
+  top: -1rem;
+  background-color: #d6caca;
+  padding: 8px 15px;
+  border-radius: 25px;
+}
+
 header {
   position: relative;
   display: -webkit-box;

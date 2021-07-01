@@ -11,11 +11,11 @@ if (second < 10) {
   second = "0" + second;
 }
 if (hour < 12) {
-  welcome = "Good morning";
+  welcome = "Morning";
 } else if (hour < 17) {
-  welcome = "Good afternoon";
+  welcome = "Afternoon";
 } else {
-  welcome = "Good evening";
+  welcome = "Evening";
 }
 
 const welcomeContainer = document.querySelector("#greeting");
