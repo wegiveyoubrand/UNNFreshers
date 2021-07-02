@@ -587,15 +587,34 @@ img {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  padding: 2rem;
+  padding: 20px 10px;
+  position: relative;
+}
+
+.user-profile .content-title {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: #deeaf0;
+  -webkit-box-shadow: 0 0 5px rgba(6, 6, 82, 0.207);
+          box-shadow: 0 0 5px rgba(6, 6, 82, 0.207);
+  top: -1rem;
+  z-index: 200;
+  left: 2rem;
+  border-radius: 25px;
+  color: #12043a;
 }
 
 .user-profile .user {
+  position: relative;
   width: 100%;
   max-width: 400px;
+  margin: 0 auto;
   padding: 2rem;
-  background-color: #9488ff;
-  border-radius: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(6, 6, 82, 0.207);
+          box-shadow: 0 0 5px rgba(6, 6, 82, 0.207);
+  border-radius: 20px;
+  background-color: #09093d;
+  color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,12 +629,23 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  font-size: 12px;
+}
+
+.user-profile .user > * {
+  margin-bottom: 5px;
+}
+
+.user-profile .user > div {
+  font-weight: bold;
+  letter-spacing: .5px;
 }
 
 .user-profile .user__avatar {
   position: relative;
   background-color: #fff;
   padding: 15px;
+  margin-bottom: 20px;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -635,6 +665,29 @@ img {
   height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.user-profile .user span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.user-profile .user .user__edit {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+}
+
+.user-profile .user .user__edit i {
+  font-size: 1rem;
+  color: #09093d;
 }
 
 .section-wrapper {
