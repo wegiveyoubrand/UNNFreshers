@@ -591,7 +591,8 @@ img {
 }
 
 .user-profile .user {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   padding: 2rem;
   background-color: #9488ff;
   border-radius: 25px;
