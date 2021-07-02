@@ -661,9 +661,11 @@ img {
   top: -1rem;
   left: 20px;
   font-size: 12px;
-  background-color: #0d0655;
+  font-weight: 600;
+  color: #0d0655;
+  -webkit-box-shadow: 0 0 5px rgba(13, 6, 85, 0.3);
+          box-shadow: 0 0 5px rgba(13, 6, 85, 0.3);
   letter-spacing: 0.25px;
-  color: #fff;
   padding: 8px 15px;
   border-radius: 25px;
 }
