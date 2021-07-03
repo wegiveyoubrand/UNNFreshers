@@ -174,7 +174,7 @@ aside {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: calc(100% - 6rem);
+  height: calc(100vh - 6rem);
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
