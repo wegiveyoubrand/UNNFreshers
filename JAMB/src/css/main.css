@@ -354,12 +354,18 @@ section {
 
 section:first-child {
   height: calc(100vh - 6rem);
+  background-image: url("/public/images/Jamb-2-1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--baseColor);
+  background-blend-mode: soft-light;
 }
 
 section:first-child > div {
   max-width: 600px;
   margin: auto;
   padding-top: 2rem;
+  color: #fff;
 }
 
 section:first-child > div h3 {
