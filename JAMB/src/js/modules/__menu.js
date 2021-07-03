@@ -3,6 +3,9 @@ document.querySelector(".menu").addEventListener("click", () => {
 });
 
 const aside = document.querySelector("aside");
-const menuActive = function () {
+
+const MenuContent = document.querySelector(".aside");
+const menuToggle = function () {
   aside.classList.toggle("active");
+  MenuContent.classList.toggle("active");
 };
