@@ -386,7 +386,9 @@ section:first-child > div p {
 }
 
 section button {
-  background: #000;
+  padding: 20px;
+  background: var(--baseColor);
+  font-family: inherit;
 }
 
 .section-title {
