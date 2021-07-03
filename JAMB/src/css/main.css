@@ -137,7 +137,7 @@ label {
 
 /* THE CARD */
 .card {
-  padding: 20px;
+  padding: var(--default-space);
   display: -ms-grid;
   display: grid;
   height: auto;
@@ -145,6 +145,27 @@ label {
 
 .card.service {
   background-color: var(--soften__baseColor);
+}
+
+.card.news {
+  background-color: #fff;
+}
+
+.card .news__title {
+  font-size: 1.25rem;
+  color: var(--baseColor);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card .news__caption {
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+.card .news__date {
+  font-size: 12px;
+  font-weight: bold;
 }
 
 header {
@@ -383,6 +404,10 @@ section:first-child > div h3 {
 section:first-child > div p {
   text-transform: lowercase;
   line-height: 1.6;
+}
+
+section.news {
+  background-color: var(--soften__baseColor);
 }
 
 section button {
