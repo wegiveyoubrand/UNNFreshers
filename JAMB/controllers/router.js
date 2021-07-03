@@ -22,7 +22,7 @@ var myFirstRouter = new Router(
   {
     path: "/dashboard",
     name: "Dashboard",
-  },
+  }
   {
     path: "/blog",
     name: "Blog",
