@@ -143,6 +143,11 @@ label {
   height: auto;
 }
 
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
 .card.service {
   background-color: var(--soften__baseColor);
 }
@@ -164,8 +169,19 @@ label {
 }
 
 .card .news__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 12px;
   font-weight: bold;
+}
+
+.card .news__date i {
+  margin-right: 5px;
+  font-size: 1rem;
 }
 
 header {
