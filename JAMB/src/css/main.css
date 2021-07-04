@@ -181,7 +181,7 @@ label {
 
 /* THE CARD */
 .card {
-  padding: var(--default-space);
+  padding: var(--default-space_2);
   display: -ms-grid;
   display: grid;
   height: auto;
@@ -434,9 +434,9 @@ main {
 .service-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: var(--default-space);
   height: auto;
   width: 100%;
   padding: var(--default-space);
@@ -447,7 +447,7 @@ main {
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+  grid-gap: var(--default-space);
   height: auto;
   width: 100%;
   padding: var(--default-space);
@@ -563,18 +563,13 @@ a {
 }
 
 :root {
-  --default-space: 15px;
+  --default-space: 10px;
+  --default-space_2: calc(var(--default-space) * 2);
 }
 
 @media (min-width: 580px) {
   :root {
     --default-space: 20px;
-  }
-}
-
-@media (min-width: 720px) {
-  :root {
-    --default-space: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
