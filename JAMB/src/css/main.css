@@ -563,10 +563,16 @@ a {
 }
 
 :root {
-  --default-space: 20px;
+  --default-space: 15px;
 }
 
-@media (min-width: 620px) {
+@media (min-width: 580px) {
+  :root {
+    --default-space: 20px;
+  }
+}
+
+@media (min-width: 720px) {
   :root {
     --default-space: 2rem;
   }
