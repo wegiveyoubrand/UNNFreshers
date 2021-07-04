@@ -141,6 +141,8 @@ label {
   display: -ms-grid;
   display: grid;
   height: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .card img {
@@ -212,7 +214,6 @@ aside {
   bottom: 0;
   width: 100%;
   height: calc(100vh - 6rem);
-  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,8 +357,11 @@ aside #closeAside {
 main {
   position: relative;
   bottom: 0;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   top: 6rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .form-container {
@@ -373,20 +377,32 @@ main {
           align-items: center;
 }
 
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  height: auto;
+  width: 100%;
+  padding: var(--default-space);
+}
+
 .cards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
-  height: 100%;
+  height: auto;
   width: 100%;
-  padding: 20px;
+  padding: var(--default-space);
 }
 
 section {
   position: relative;
   padding: var(--default-space);
+  height: 100%;
 }
 
 section:first-child {
@@ -436,9 +452,22 @@ section button {
   text-align: center;
 }
 
+footer {
+  position: relative;
+  background-color: var(--baseColor);
+  width: 100%;
+  top: 6rem;
+  color: #f2f2f2;
+}
+
 *, *::before, *::after {
-  margin: 0;
-  padding: 0;
+  margin: unset;
+  padding: unset;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
