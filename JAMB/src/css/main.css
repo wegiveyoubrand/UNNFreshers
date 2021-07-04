@@ -189,6 +189,12 @@ label {
   margin: 0 auto;
 }
 
+.card__image {
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
 .card img {
   height: 100%;
   width: 100%;
@@ -425,7 +431,18 @@ main {
   padding: var(--default-space);
 }
 
-.cards {
+.service-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  height: auto;
+  width: 100%;
+  padding: var(--default-space);
+}
+
+.news-cards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
