@@ -727,8 +727,8 @@ img {
 .section-wrapper .section-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -787,15 +787,18 @@ img {
 
 .section-wrapper .section-card__image {
   position: relative;
-  height: 300px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
-  width: 300px;
   overflow: hidden;
-  background: #000;
+  background: #4985d5;
+  -webkit-box-shadow: 0 0 10px rgba(18, 18, 60, 0.638);
+          box-shadow: 0 0 10px rgba(18, 18, 60, 0.638);
+  margin-bottom: 10px;
 }
 
 .section-wrapper .section-card__image img {
-  position: absolute;
+  border-radius: 50%;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
