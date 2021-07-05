@@ -40,52 +40,9 @@ body > * {
 
 body#home {
   position: relative;
-  background-image: url("/public/images/bgg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #fff;
-}
-
-body#home::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
   top: 0;
-  left: 0;
-  background-color: rgba(26, 10, 97, 0.289);
-}
-
-body#home h1 {
-  position: relative;
-  z-index: 900;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  font-family: "Poppins";
-  font-weight: 900;
-  color: #eeeaea;
+  color: #fff;
   height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-}
-
-body#home h1 span p {
-  display: block;
-  margin-top: 2rem;
-  font-size: 1rem;
-  letter-spacing: normal;
-  font-weight: 500;
 }
 
 body#JAMBServices {
@@ -185,22 +142,72 @@ header .button:hover {
 
 main {
   position: relative;
+  top: 6rem;
+  left: 0;
   bottom: 0;
   min-height: calc(100vh - 6rem);
-  height: 100%;
+  height: auto;
 }
 
 section {
   position: relative;
+  height: calc(100vh - 6rem);
+  color: #000;
+  width: 100%;
+  padding: 2rem;
+}
+
+section.hero {
+  height: calc(100vh - 6rem);
+  background-image: url("/public/images/bgg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  padding: 20px;
+}
+
+section.hero::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 10, 97, 0.761);
+}
+
+section.hero h1 {
+  position: relative;
+  z-index: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-family: "Poppins";
+  font-weight: 900;
+  color: #eeeaea;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: calc(100vh - 6rem);
-  color: #000;
-  display: -ms-grid;
-  display: grid;
-  padding: 20px;
+  max-width: 920px;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+section.hero h1 span p {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1rem;
+  letter-spacing: normal;
+  font-weight: 500;
 }
 
 section .section-title {
@@ -211,9 +218,7 @@ section .section-title {
 .wrapper {
   height: 100%;
   width: 100%;
-  max-width: 920px;
   margin: 0 auto;
-  padding: 2rem;
   color: #fff;
   font-size: 2rem;
   line-height: 1.2;
