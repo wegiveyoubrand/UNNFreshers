@@ -785,6 +785,23 @@ img {
   transition: 0.3s ease-in-out;
 }
 
+.section-wrapper .section-card__image {
+  position: relative;
+  height: 300px;
+  border-radius: 50%;
+  width: 300px;
+  overflow: hidden;
+  background: #000;
+}
+
+.section-wrapper .section-card__image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .section-wrapper .section-card__text {
   text-align: center;
   font-size: 12px;
