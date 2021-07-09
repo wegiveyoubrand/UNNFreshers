@@ -165,7 +165,7 @@ section.hero {
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  padding: 20px;
+  padding: 0;
 }
 
 section.hero::after {
@@ -181,12 +181,15 @@ section.hero::after {
 section.hero h1 {
   position: relative;
   z-index: 900;
-  line-height: 1.1;
-  margin-bottom: 20px;
+  line-height: 1.2;
+  max-width: 920px;
+  margin: auto;
+  margin-bottom: 10px;
   font-family: "Poppins";
   font-weight: 900;
   color: #eeeaea;
   height: 100%;
+  font-size: calc(2vw + 16px);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,17 +201,18 @@ section.hero h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 920px;
   padding: 2rem;
   overflow: hidden;
 }
 
 section.hero h1 span p {
   display: block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1rem;
   letter-spacing: normal;
   font-weight: 500;
+  line-height: 1.6;
+  opacity: .85;
 }
 
 section .section-title {
