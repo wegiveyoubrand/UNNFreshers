@@ -686,8 +686,6 @@ aside #closeAside {
           flex-direction: column;
   background: #fff;
   color: #000;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 139, 0.152);
-          box-shadow: 0 0 15px rgba(0, 0, 139, 0.152);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
