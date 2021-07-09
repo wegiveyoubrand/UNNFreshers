@@ -23,6 +23,10 @@ const aside = document.querySelector("aside");
 const asideContent = document.querySelector(".aside");
 const body = document.querySelector("body");
 
+menuToggle.addEventListener("click", () => {
+  aside.classList.toggle("open");
+  asideContent.classList.add('open')
+});
 
 let FreshersList = [];
 console.log(searchBar);
