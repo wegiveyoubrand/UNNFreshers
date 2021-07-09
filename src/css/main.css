@@ -181,12 +181,12 @@ section.hero::after {
 section.hero h1 {
   position: relative;
   z-index: 900;
-  line-height: 1.2;
+  line-height: 1.4;
   max-width: 920px;
   margin: auto;
   margin-bottom: 10px;
   font-family: "Poppins";
-  font-weight: 900;
+  font-weight: 700;
   color: #eeeaea;
   height: 100%;
   font-size: calc(2vw + 16px);
@@ -209,7 +209,7 @@ section.hero h1 span p {
   display: block;
   margin-top: 1rem;
   font-size: 1rem;
-  letter-spacing: normal;
+  letter-spacing: 1px;
   font-weight: 500;
   line-height: 1.6;
   opacity: .85;
