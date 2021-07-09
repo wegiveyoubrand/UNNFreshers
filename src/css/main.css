@@ -129,11 +129,17 @@ header .button {
   background-color: #0d0646;
   color: #fff;
   font-size: 14px;
-  padding: 15px 20px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid transparent;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 720px) {
+  header .button {
+    padding: 15px 20px;
+  }
 }
 
 header .button:hover {
