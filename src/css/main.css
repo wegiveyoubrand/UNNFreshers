@@ -189,7 +189,7 @@ section.hero h1 {
   font-weight: 700;
   color: #eeeaea;
   height: 100%;
-  font-size: calc(2vw + 16px);
+  font-size: calc(2.2vw + 16px);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
