@@ -25,7 +25,8 @@ const body = document.querySelector("body");
 
 menuToggle.addEventListener("click", () => {
   aside.classList.toggle("open");
-  asideContent.classList.add('open')
+  asideContent.classList.add("open");
+  body.classList.add("fixed");
 });
 
 let FreshersList = [];
