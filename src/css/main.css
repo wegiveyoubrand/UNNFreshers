@@ -825,6 +825,11 @@ aside #closeAside {
   grid-gap: 20px;
 }
 
+#account section {
+  padding: 10px;
+  padding-top: 2rem;
+}
+
 #account header {
   display: -webkit-box;
   display: -ms-flexbox;
