@@ -201,7 +201,7 @@ section.hero h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2rem;
+  padding: 20px;
   overflow: hidden;
 }
 
