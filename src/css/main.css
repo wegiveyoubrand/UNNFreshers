@@ -673,7 +673,7 @@ aside #closeAside {
 
 .form-container form {
   height: auto;
-  width: calc(100% - 2rem / 2);
+  width: calc(100% - 20px / 2);
   max-width: 600px;
   padding: 20px;
   margin: 0 auto;
