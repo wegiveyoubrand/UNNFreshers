@@ -302,7 +302,7 @@ select {
 input,
 select {
   margin-bottom: 20px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 button {
@@ -718,12 +718,13 @@ aside #closeAside {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .form-container form label {
   margin-bottom: 5px;
   display: block;
+  font-size: .85rem;
 }
 
 .form-container form input {
@@ -734,7 +735,8 @@ aside #closeAside {
 
 .form-container form button {
   font-size: 1rem;
-  border-radius: 20px;
+  font-family: inherit;
+  border-radius: 5px;
   width: 100%;
   background-color: var(--dark-green);
   color: #fff;
