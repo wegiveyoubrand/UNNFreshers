@@ -181,7 +181,7 @@ section {
   height: 100%;
   color: #000;
   width: 100%;
-  padding: 2rem;
+  padding: 20px;
 }
 
 section.hero {
@@ -243,7 +243,7 @@ section.hero h1 span p {
 }
 
 section .section-title {
-  padding: 2rem;
+  padding: 20px;
   text-align: center;
 }
 
@@ -847,7 +847,6 @@ footer {
   width: 100%;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
 }
 
 .grid-3 {
