@@ -721,8 +721,12 @@ aside #closeAside {
   border-radius: 10px;
 }
 
+.form-container form .form-group {
+  margin-bottom: 10px;
+}
+
 .form-container form label {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   display: block;
   font-size: .85rem;
 }
