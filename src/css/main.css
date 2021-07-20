@@ -726,15 +726,30 @@ aside #closeAside {
 }
 
 .form-container form label {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   display: block;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
-.form-container form input {
+.form-container form input,
+.form-container form select {
   width: 100%;
   border: 1px dotted;
   padding: 10px 20px;
+}
+
+.form-container form option {
+  font-size: 1rem;
+  padding: 10px;
+  font-family: inherit;
+}
+
+.form-container form .grid-col-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 20px;
 }
 
 .form-container form button {
@@ -830,7 +845,8 @@ aside #closeAside {
 
 footer {
   position: relative;
-  background: #000;
+  background: #0d0646;
+  padding: 2rem;
   top: 6rem;
   bottom: 0;
 }
@@ -873,9 +889,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -888,6 +904,28 @@ footer {
 #account header .brand .logo {
   height: 1rem;
   width: 1rem;
+}
+
+#account header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#account header .signing__option {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(13, 11, 50, 0.145);
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+#account header .signing__option:hover {
+  opacity: 1;
 }
 
 #account header .toHome {
@@ -937,10 +975,11 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.85;
 }
 
 .menu {
