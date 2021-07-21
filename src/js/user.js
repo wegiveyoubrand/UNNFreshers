@@ -14,7 +14,5 @@ form.addEventListener("submit", function (event) {
 
 function submitForm() {}
 
-const userName = "Kosisochukwu";
-
 const usernameContainer = document.querySelector("#userName_container");
 // usernameContainer.textContent = userName;
