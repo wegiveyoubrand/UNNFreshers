@@ -616,11 +616,11 @@
   max-width: 400px;
   margin: 0 auto;
   padding: 2rem;
-  -webkit-box-shadow: 0 0 5px rgba(6, 6, 82, 0.207);
-          box-shadow: 0 0 5px rgba(6, 6, 82, 0.207);
+  -webkit-box-shadow: 0 0 5px rgba(165, 165, 192, 0.207);
+          box-shadow: 0 0 5px rgba(165, 165, 192, 0.207);
   border-radius: 20px;
-  background-color: #09093d;
-  color: #f2f2f2;
+  background-color: white;
+  color: #1c0d38;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,7 +635,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 12px;
+  font-family: "Montserrat";
+  font-size: 1rem;
 }
 
 .user-profile .user > * {
@@ -643,13 +644,14 @@
 }
 
 .user-profile .user > div {
-  font-weight: bold;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .user-profile .user__avatar {
   position: relative;
-  background-color: #2b1717;
+  background-color: white;
+  -webkit-box-shadow: 0 0 15px rgba(13, 4, 38, 0.07);
+          box-shadow: 0 0 15px rgba(13, 4, 38, 0.07);
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 50%;
@@ -688,12 +690,13 @@
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background-color: #fff;
+  cursor: pointer;
+  background-color: #0a071f;
 }
 
 .user-profile .user .user__edit i {
   font-size: 1rem;
-  color: #09093d;
+  color: white;
 }
 
 .section-wrapper {
@@ -1056,7 +1059,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Poppins";
-  background-color: rgba(18, 18, 60, 0.049);
+  background-color: rgba(0, 0, 255, 0.15);
 }
 
 @media (min-width: 768px) {
