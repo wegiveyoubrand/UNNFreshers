@@ -789,6 +789,11 @@
   padding: 20px 5%;
 }
 
+.card.agency img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .card.portal .card__image {
   height: 120px;
 }
