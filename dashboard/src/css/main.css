@@ -150,6 +150,39 @@
   position: relative;
 }
 
+.user-card {
+  height: 200px;
+  padding: 20px;
+}
+
+.user__avatar {
+  position: relative;
+  -webkit-box-shadow: 0 0 5px #0d083a;
+          box-shadow: 0 0 5px #0d083a;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user__avatar img {
+  width: auto;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .user_options {
   position: absolute;
   top: 4rem;
@@ -616,7 +649,7 @@
 
 .user-profile .user__avatar {
   position: relative;
-  background-color: #fff;
+  background-color: #2b1717;
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 50%;
@@ -664,7 +697,7 @@
 }
 
 .section-wrapper {
-  padding: 20px 10px;
+  padding: 20px 0;
   padding-top: 30px;
   position: relative;
   border-radius: 5px;
@@ -693,114 +726,21 @@
   -webkit-box-shadow: 0 0 5px rgba(13, 6, 85, 0.3);
           box-shadow: 0 0 5px rgba(13, 6, 85, 0.3);
   letter-spacing: 0.25px;
-  padding: 8px 15px;
+  padding: 8px 20px;
   border-radius: 25px;
 }
 
 .section-wrapper .section-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 10px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding-top: 10px;
-}
-
-.section-wrapper .section-card {
-  background-color: white;
-  -webkit-box-shadow: 0px 0px 5px rgba(18, 18, 60, 0.09);
-          box-shadow: 0px 0px 5px rgba(18, 18, 60, 0.09);
-  border-radius: 5px;
-  padding: 20px 10px;
-  color: #222;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.section-wrapper .section-card:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.section-wrapper .section-card a {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.section-wrapper .section-card__number {
-  height: 3rem;
-  width: 3rem;
-  position: relative;
-  background-color: #11073b;
-  color: #f3f3f3;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.section-wrapper .section-card__image {
-  position: relative;
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #4985d5;
-  -webkit-box-shadow: 0 0 10px rgba(18, 18, 60, 0.638);
-          box-shadow: 0 0 10px rgba(18, 18, 60, 0.638);
-  margin-bottom: 10px;
-}
-
-.section-wrapper .section-card__image img {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.section-wrapper .section-card__text {
-  text-align: center;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  color: rgba(22, 10, 65, 0.75);
-  line-height: 1.2;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.section-wrapper .section-card:hover > * {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  padding: 20px 2rem;
 }
 
 .section-wrapper .section-action {
@@ -826,6 +766,82 @@
 .section-wrapper .section-action i {
   margin-right: 10px;
   font-size: 1rem;
+}
+
+.section-wrapper .section .service a {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.section-wrapper .section .service a .section-card__text {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 15px rgba(99, 99, 165, 0.1);
+          box-shadow: 0px 0px 15px rgba(99, 99, 165, 0.1);
+  color: #222;
+  min-height: 200px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.card a {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.card__image {
+  position: relative;
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.card__image--small {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.card__image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__text {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: rgba(22, 10, 65, 0.75);
+  line-height: 1.2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 20px;
 }
 
 header {
@@ -876,6 +892,7 @@ main {
   padding: 2rem 10px;
   overflow-y: auto;
   margin-bottom: 20px;
+  background-color: rgba(178, 178, 247, 0.049);
 }
 
 @media (min-width: 768px) {
@@ -1039,7 +1056,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Poppins";
-  background-color: rgba(0, 0, 255, 0.15);
+  background-color: rgba(18, 18, 60, 0.049);
 }
 
 @media (min-width: 768px) {
