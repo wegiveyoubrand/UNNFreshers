@@ -890,17 +890,16 @@
      object-fit: contain;
 }
 
-.card.product {
-  padding-top: 10px;
-}
-
 .card.product .card__image {
   height: 200px;
   padding-bottom: 62.5%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .card.product .product__text {
-  padding: 20px 10px;
+  padding: 0 10px;
+  padding-bottom: 20px;
 }
 
 header {
