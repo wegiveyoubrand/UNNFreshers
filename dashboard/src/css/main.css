@@ -771,8 +771,8 @@
 }
 
 .section-wrapper .section-content.quick-access {
-  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  -ms-grid-columns: (minmax(140px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 }
 
 .section-wrapper .section-action {
