@@ -146,6 +146,12 @@
   }
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 4rem;
+  right: 1rem;
+}
+
 .user {
   position: relative;
 }
@@ -423,6 +429,19 @@
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-pane > div i {
+  font-size: 2rem;
 }
 
 .modal {
@@ -746,6 +765,11 @@
   padding: 20px 5%;
 }
 
+.section-wrapper .section-content.products {
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
 .section-wrapper .section-action {
   margin-top: 2rem;
   display: -webkit-box;
@@ -864,6 +888,19 @@
 .card.agency img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.card.product {
+  padding-top: 10px;
+}
+
+.card.product .card__image {
+  height: 200px;
+  padding-bottom: 62.5%;
+}
+
+.card.product .product__text {
+  padding: 20px 10px;
 }
 
 header {
@@ -1075,6 +1112,8 @@ html {
 }
 
 body {
+  position: relative;
+  overflow: hidden;
   height: 100%;
   width: 100%;
   font-family: "Poppins";
