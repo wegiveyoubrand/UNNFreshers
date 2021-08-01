@@ -897,13 +897,18 @@
 .card.product .card__image {
   height: 200px;
   padding-bottom: 62.5%;
-  background-size: contain;
+  background-size: 80%;
   background-repeat: no-repeat;
 }
 
 .card.product .product__text {
   padding: 0 10px;
   padding-bottom: 20px;
+}
+
+.card.product .product__name {
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .card.product .product__available {
