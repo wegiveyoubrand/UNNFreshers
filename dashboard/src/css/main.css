@@ -770,17 +770,24 @@
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
-.section-wrapper .section-content.agencies {
-  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  grid-gap: 20px;
-}
-
 @media (max-width: 520px) {
   .section-wrapper .section-content.agencies {
+    grid-gap: 20px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.section-wrapper .section-content.agencies .card__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-wrapper .section-content.quick-access {
