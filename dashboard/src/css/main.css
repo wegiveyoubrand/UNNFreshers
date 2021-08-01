@@ -480,6 +480,18 @@
           align-items: center;
 }
 
+.modal-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+.modal-close i {
+  font-size: 2rem;
+  color: #fff;
+}
+
 .subscription h3 {
   margin-bottom: 8px;
 }
@@ -1020,9 +1032,14 @@ header i {
 
 main {
   padding: 2rem 5%;
+  height: 100%;
   overflow-y: auto;
   margin-bottom: 20px;
   background-color: rgba(178, 178, 247, 0.049);
+}
+
+main.fixed {
+  overflow: hidden;
 }
 
 footer {
