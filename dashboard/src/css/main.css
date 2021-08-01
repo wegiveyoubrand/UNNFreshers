@@ -770,6 +770,11 @@
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+.section-wrapper .section-content.quick-access {
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
 .section-wrapper .section-action {
   margin-top: 2rem;
   display: -webkit-box;
@@ -922,6 +927,11 @@
   z-index: 100;
   -webkit-box-shadow: 0 0 5px rgba(17, 17, 213, 0.33);
           box-shadow: 0 0 5px rgba(17, 17, 213, 0.33);
+}
+
+.card.access .card__image {
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 header {
