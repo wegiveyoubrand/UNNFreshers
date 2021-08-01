@@ -1076,9 +1076,17 @@ footer .footer-component > div {
   /* ease-in-out */
 }
 
+footer .footer-component > div span {
+  display: none;
+}
+
 footer .footer-component > div:hover, footer .footer-component > div.active {
   opacity: 1;
   background-color: #da1010;
+}
+
+footer .footer-component > div.active span {
+  display: block;
 }
 
 footer .footer-component > div i {
