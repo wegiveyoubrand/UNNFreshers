@@ -737,14 +737,14 @@
 }
 
 .section-wrapper:first-child {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .section-wrapper .section-title {
   position: absolute;
-  top: -1rem;
+  top: -22px;
   left: 20px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: #0d0655;
   -webkit-box-shadow: 0 0 5px rgba(13, 6, 85, 0.3);
