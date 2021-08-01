@@ -200,6 +200,7 @@
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   border-radius: 20px;
+  color: #000;
 }
 
 .user_options.open {
@@ -222,6 +223,7 @@
 .user_options i {
   margin-right: 10px;
   font-size: 1rem;
+  color: inherit;
 }
 
 .side-nave {
