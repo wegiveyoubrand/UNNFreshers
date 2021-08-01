@@ -890,6 +890,10 @@
      object-fit: contain;
 }
 
+.card.product {
+  position: relative;
+}
+
 .card.product .card__image {
   height: 200px;
   padding-bottom: 62.5%;
@@ -900,6 +904,19 @@
 .card.product .product__text {
   padding: 0 10px;
   padding-bottom: 20px;
+}
+
+.card.product .product__available {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: green;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 5px rgba(17, 17, 213, 0.33);
+          box-shadow: 0 0 5px rgba(17, 17, 213, 0.33);
 }
 
 header {
