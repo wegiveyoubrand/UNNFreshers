@@ -1135,6 +1135,7 @@ footer .footer-component > div {
 
 footer .footer-component > div span {
   display: none;
+  color: #fff;
 }
 
 footer .footer-component > div:hover, footer .footer-component > div.active {
