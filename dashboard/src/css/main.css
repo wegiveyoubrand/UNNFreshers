@@ -1234,7 +1234,7 @@ footer .footer-component > div i {
 
 #TechMarket .intro-section {
   height: 40vh;
-  background-image: url("/public/images/oliver-pecker-HONJP8DyiSM-unsplash.jpg");
+  background-image: url("../public/images/oliver-pecker-HONJP8DyiSM-unsplash.jpg");
   background-color: rgba(17, 17, 85, 0.398);
   background-size: cover;
   background-position: center;
