@@ -978,12 +978,11 @@
 
 .card.product {
   position: relative;
+  padding: 5%;
 }
 
 .card.product .card__image {
   height: 200px;
-  padding-bottom: 62.5%;
-  background-size: 80%;
   background-repeat: no-repeat;
 }
 
