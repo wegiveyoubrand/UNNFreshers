@@ -55,17 +55,18 @@ const AirtimeandData = `<div class="form-container">
   </form>
 </div>
 `;
-const OnlinePayment = `<div class ="form-container"><form>
-<div class="form-group">
-
-  <input type="radio" name="payment"> Remita
-  <input type="radio" name="payment">Etranzact
-  <input type="radio" name="payment">Bank Transfer
-
+const OnlinePayment = `<div class ="form-container">
+<form>
+  <div class="form-group " >
+  <select>
+    <option>Remita</option>
+    <option>eTranzact</option>
+    <option>Bank Transfer</option>
+  </select>
 </div>
 <div class="form-group">
 
-<input type="text">
+<input type="text" placeholder="Enter transaction ID">
 </div>
 <button>Continue</button>
 </form></div>
