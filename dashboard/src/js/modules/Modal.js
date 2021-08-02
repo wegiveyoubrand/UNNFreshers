@@ -26,10 +26,13 @@ services.forEach((service) => {
 
         if (lowerData == "computer services") {
           modalContent.innerHTML = ComputerServicesContent;
+        } else if (lowerData == "airtime and data") {
+          modalContent.innerHTML = AirtimeandData;
         } else if (lowerData == "online payment") {
-          alert("online payment");
+          modalContent.innerHTML = OnlinePayment;
         } else {
           alert("error");
+          modalContent.innerHTML = "";
         }
       }
     }
@@ -38,3 +41,28 @@ services.forEach((service) => {
 
 // Set Modal Content
 const ComputerServicesContent = `Hello Computer Services`;
+const AirtimeandData = `<div class="form-container">
+<form>
+    <div class="form-group">
+      <label>Enter mobile number</label>
+      <input type="text">
+    </div>
+    <button>Continue</button>
+  </form>
+</div>
+`;
+const OnlinePayment = `<div class ="form-container"><form>
+<div class="form-group">
+
+  <input type="radio" name="payment"> Remita
+  <input type="radio" name="payment">Etranzact
+  <input type="radio" name="payment">Bank Transfer
+
+</div>
+<div class="form-group">
+
+<input type="text">
+</div>
+<button>Continue</button>
+</form></div>
+`;

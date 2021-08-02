@@ -452,17 +452,32 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(7, 7, 51, 0.5);
+  background-color: rgba(7, 7, 51, 0.953);
   z-index: 900;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .modal.open {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.modal .modal-component {
+  background-color: #fff;
+  padding: 20px 5%;
 }
 
 .modal .modal-content {
@@ -472,6 +487,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -979,6 +998,17 @@
 .card.access .card__image {
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-container form {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
 }
 
 header {
