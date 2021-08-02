@@ -14,12 +14,12 @@ ModalClose.addEventListener("click", (e) => {
 services.forEach((service) => {
   service.addEventListener("click", (e) => {
     e.preventDefault;
-    Modal.classList.add("open");
-    main.classList.add("fixed");
     if (service.getAttribute("data-name") !== null) {
       console.log(service.getAttribute("data-name"));
       let dataAttribute = service.getAttribute("data-name"),
         lowerData;
+      Modal.classList.add("open");
+      main.classList.add("fixed");
 
       if (dataAttribute !== "") {
         lowerData = dataAttribute.toLowerCase();
