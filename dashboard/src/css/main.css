@@ -1254,6 +1254,10 @@ footer .footer-component > div i {
   color: #fff;
 }
 
+#TechMarket section {
+  padding-bottom: 1rem;
+}
+
 #TechMarket main {
   padding: 0;
 }
