@@ -854,6 +854,12 @@
   }
 }
 
+.cards.products {
+  padding: 20px 5%;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
 .card {
   position: relative;
   display: -ms-grid;
@@ -1215,6 +1221,32 @@ footer .footer-component > div i {
 }
 
 #JAMBProfile main {
+  padding: 0;
+}
+
+#TechMarket .intro-section {
+  height: 40vh;
+  background-image: url("/public/images/oliver-pecker-HONJP8DyiSM-unsplash.jpg");
+  background-color: #111155;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#TechMarket .intro-section h3 {
+  color: #fff;
+}
+
+#TechMarket main {
   padding: 0;
 }
 
