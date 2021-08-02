@@ -860,6 +860,14 @@
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+@media (max-width: 520px) {
+  .cards.products {
+    grid-gap: 5%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .card {
   position: relative;
   display: -ms-grid;
