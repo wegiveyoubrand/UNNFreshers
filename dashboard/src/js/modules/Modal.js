@@ -56,18 +56,18 @@ const AirtimeandData = `<div class="form-container">
 </div>
 `;
 const OnlinePayment = `<div class ="form-container">
-<form>
+<form name="RemitaPay">
   <div class="form-group " >
-  <select>
-    <option>Remita</option>
+  <select disabled>
+    <option selected>Remita</option>
     <option>eTranzact</option>
     <option>Bank Transfer</option>
   </select>
 </div>
 <div class="form-group">
 
-<input type="text" placeholder="Enter transaction ID">
+<input type="text" placeholder="Enter RRR number" name="RRR" id="RRRNumber">
 </div>
-<button>Continue</button>
+<a onclick="getInputValue()">Pay Remita</a>
 </form></div>
 `;
