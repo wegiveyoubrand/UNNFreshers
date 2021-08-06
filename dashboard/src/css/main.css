@@ -407,6 +407,10 @@
 }
 
 .navigation-pane {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -3px;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1331,10 +1335,14 @@ footer .footer-component > div i {
 }
 
 #TechMarket .intro-section h3 {
-  font-size: 2rem;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  font-size: 2.1rem;
+  color: #c5c9ff;
+  font-weight: 700;
+  letter-spacing: 15px;
+}
+
+#TechMarket .section-title {
+  padding: 0 5%;
 }
 
 #TechMarket main {
