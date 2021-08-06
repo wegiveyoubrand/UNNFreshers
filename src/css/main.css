@@ -269,6 +269,7 @@ section.hero h1 span p {
 section .section-title {
   padding: 20px;
   text-align: center;
+  font-size: calc(2.2vw + 16px);
 }
 
 .wrapper {
@@ -749,7 +750,7 @@ aside #closeAside {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 20px 5%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -984,7 +985,8 @@ footer {
 }
 
 .pricing-plans {
-  grid-gap: 20px;
+  grid-gap: 20px 5%;
+  padding: 5%;
 }
 
 .pricing-plan {
@@ -998,8 +1000,19 @@ footer {
           align-items: center;
   text-align: center;
   padding: 20px 5%;
-  background-color: #fff;
+  background-color: rgba(24, 6, 65, 0.85);
+  color: #fff;
   border-radius: 15px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.pricing-plan:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .grid-2 {
