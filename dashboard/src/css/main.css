@@ -411,15 +411,6 @@
   position: sticky;
   top: -3px;
   z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   margin-bottom: 20px;
   background-color: #fff;
@@ -428,50 +419,79 @@
           box-shadow: 0 0 5px rgba(3, 3, 72, 0.076);
 }
 
-.navigation-pane > div {
-  padding: 0 2rem;
-  font-size: 14px;
-  cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  white-space: nowrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navigation-pane > div i {
-  font-size: 1.5rem;
-  margin-right: 10px;
-}
-
-.navigation-pane > div .title {
-  letter-spacing: 3px;
-}
-
 .navigation-pane .tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 5%;
 }
 
 .navigation-pane .tabs .tab {
+  position: relative;
+  overflow: hidden;
   padding: 8px 20px;
-  font-weight: 600;
+  font-weight: 500;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  margin: 10px;
+  place-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-.navigation-pane .tabs .tab.active {
-  background-color: #da1010;
-  color: rgba(255, 255, 255, 0.72);
+.navigation-pane .tabs .tab::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  border: 0.5px dotted rgba(34, 34, 34, 0.344);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.navigation-pane .tabs .tab::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scaleX(12%);
+          transform: scaleX(12%);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-color: red;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+  opacity: .2;
+}
+
+.navigation-pane .tabs .tab:hover, .navigation-pane .tabs .tab.active {
+  cursor: pointer;
+  color: #fff;
+}
+
+.navigation-pane .tabs .tab:hover::after, .navigation-pane .tabs .tab:hover::before, .navigation-pane .tabs .tab.active::after, .navigation-pane .tabs .tab.active::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
 }
 
 .modal {
@@ -887,8 +907,8 @@
 
 .cards.products {
   padding: 20px 5%;
-  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1019,16 +1039,18 @@
 
 .card.product .card__image {
   height: 200px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
 }
 
 .card.product .product__text {
   padding: 1rem 5%;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .card.product .product__name {
-  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -1168,7 +1190,7 @@ main {
   height: 100%;
   overflow-y: auto;
   margin-bottom: 20px;
-  background-color: rgba(178, 178, 247, 0.049);
+  background-color: rgba(247, 188, 178, 0.111);
 }
 
 main.fixed {
@@ -1323,7 +1345,7 @@ footer .footer-component > div i {
 }
 
 #TechMarket .intro-section {
-  height: 30vh;
+  height: 80vh;
   background-color: rgba(85, 17, 17, 0.645);
   background-size: cover;
   background-position: center;
@@ -1337,13 +1359,16 @@ footer .footer-component > div i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 5%;
 }
 
-#TechMarket .intro-section h3 {
+#TechMarket .intro-section h1 {
+  max-width: 920px;
+  margin: 0 auto;
   font-size: 2.1rem;
-  color: #c5c9ff;
+  color: #f5f6fc;
   font-weight: 700;
-  letter-spacing: 15px;
+  text-align: center;
 }
 
 #TechMarket .section-title {
@@ -1375,7 +1400,7 @@ body {
   min-height: 100vh;
   width: 100%;
   font-family: "Poppins";
-  background-color: rgba(0, 0, 255, 0.15);
+  background-color: rgba(255, 60, 0, 0.15);
 }
 
 @media (min-width: 768px) {
