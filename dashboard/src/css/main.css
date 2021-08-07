@@ -449,38 +449,32 @@
   transition: 0.5s ease-in-out;
 }
 
-.navigation-pane .tabs .tab::before {
+.navigation-pane .tabs .tab::before, .navigation-pane .tabs .tab::after {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
-  border-radius: 15px;
   height: 100%;
   width: 100%;
-  border: 0.5px dotted rgba(34, 34, 34, 0.344);
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  z-index: -1;
+}
+
+.navigation-pane .tabs .tab::before {
+  border-radius: 15px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  opacity: 0;
+  border: 1px dotted #222222;
 }
 
 .navigation-pane .tabs .tab::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-transform: scaleX(12%);
-          transform: scaleX(12%);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   -webkit-transform-origin: left;
           transform-origin: left;
   background-color: #521414;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  z-index: -1;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .navigation-pane .tabs .tab:hover, .navigation-pane .tabs .tab.active {
