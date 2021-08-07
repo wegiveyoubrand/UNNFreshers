@@ -1103,6 +1103,7 @@ footer .footer-1 img {
 
 #account .BG h3 {
   margin-top: -2rem;
+  color: rgba(255, 255, 255, 0.755);
 }
 
 @media (max-width: 520px) {
