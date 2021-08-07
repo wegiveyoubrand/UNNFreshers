@@ -36,8 +36,7 @@ html {
 body {
   position: relative;
   font-family: "poppins";
-  background: -webkit-gradient(linear, left top, left bottom, from(#1b238f), to(#1b8f70));
-  background: linear-gradient(#1b238f, #1b8f70);
+  background: #fff;
   scroll-behavior: auto;
   height: 100%;
   width: 100%;
