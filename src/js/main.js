@@ -1,7 +1,7 @@
 const confirmStatus = document.querySelector("#confirmStatus");
 const searchBar = document.querySelector("#search");
 
-const toHome = document.querySelectorAll(".toHome");
+const toHome = document.querySelectorAll("#toHome");
 const closeAside = document.querySelectorAll("#closeAside");
 
 toHome.forEach((home) => {
