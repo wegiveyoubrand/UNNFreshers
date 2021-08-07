@@ -476,11 +476,11 @@
           transform: scaleX(12%);
   -webkit-transform-origin: left;
           transform-origin: left;
-  background-color: red;
+  background-color: #521414;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   z-index: -1;
-  opacity: .2;
+  opacity: .5;
 }
 
 .navigation-pane .tabs .tab:hover, .navigation-pane .tabs .tab.active {
@@ -936,28 +936,6 @@
   transition: 0.3s ease-in-out;
 }
 
-.card.portal .card__image {
-  height: 120px;
-  padding-bottom: 62.5%;
-}
-
-.card.stage {
-  padding: 20px 5%;
-}
-
-.card:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-}
-
-.card a {
-  height: 100%;
-  width: 100%;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
 .card__image {
   background-size: cover;
   background-position: center;
@@ -978,6 +956,7 @@
 }
 
 .card__text {
+  position: relative;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -986,7 +965,55 @@
   line-height: 1.2;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  padding: 20px;
+  padding: 2rem 20px;
+  padding-left: 3rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.card__text::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2rem;
+  background-color: #521414;
+  opacity: 0.5;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.card.portal .card__image {
+  height: 120px;
+  padding-bottom: 62.5%;
+}
+
+.card.stage {
+  padding: 20px 5%;
+}
+
+.card a {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.card:hover .card__text {
+  color: #f2f2f2;
+}
+
+.card:hover .card__text::after {
+  opacity: 1;
+  width: 100%;
+  z-index: -1;
 }
 
 .card.agency {
@@ -1074,6 +1101,10 @@
 .card.access .card__image {
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.card.application {
+  padding: 20px;
 }
 
 .form-container {
@@ -1259,7 +1290,7 @@ footer .footer-component > div span {
 
 footer .footer-component > div:hover, footer .footer-component > div.active {
   opacity: 1;
-  background-color: #da1010;
+  background-color: #521414;
 }
 
 footer .footer-component > div.active span {
